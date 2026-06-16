@@ -2,8 +2,9 @@ import axios, { AxiosInstance, AxiosError } from 'axios';
 
 // ─── Axios Instance ──────────────────────────────────────────────────────────
 
+const meta = import.meta as unknown as { env: { VITE_API_URL?: string } };
 const api: AxiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1',
+  baseURL: meta.env.VITE_API_URL || 'http://localhost:8000/api/v1',
   headers: {
     'Content-Type': 'application/json',
     Accept: 'application/json',

@@ -27,8 +27,8 @@ export default function ProfilePage() {
   const { user, setUser } = useAuthStore();
   const fileRef = useRef<HTMLInputElement>(null);
 
-  const profileForm = useForm({ resolver: zodResolver(profileSchema), defaultValues: { name: user?.name || '', email: user?.email || '', bio: user?.bio || '' } });
-  const passwordForm = useForm({ resolver: zodResolver(passwordSchema) });
+  const profileForm = useForm<z.infer<typeof profileSchema>>({ resolver: zodResolver(profileSchema), defaultValues: { name: user?.name || '', email: user?.email || '', bio: user?.bio || '' } });
+  const passwordForm = useForm<z.infer<typeof passwordSchema>>({ resolver: zodResolver(passwordSchema) });
 
   const handleProfileSubmit = async (data: z.infer<typeof profileSchema>) => {
     try {
@@ -124,15 +124,18 @@ export default function ProfilePage() {
               { name: 'current_password' as const, label: 'Current Password' },
               { name: 'password' as const, label: 'New Password' },
               { name: 'password_confirmation' as const, label: 'Confirm New Password' },
-            ].map(field => (
-              <div key={field.name}>
-                <label className="block font-sans text-label-caps uppercase tracking-wider text-on-surface-variant mb-2">{field.label}</label>
-                <input {...passwordForm.register(field.name)} type="password" className="w-full px-4 py-3 border border-outline-variant/40 rounded-lg bg-transparent font-sans text-sm outline-none focus:border-outline" />
-                {passwordForm.formState.errors[field.name] && (
-                  <p className="font-sans text-xs text-secondary mt-1">{passwordForm.formState.errors[field.name]?.message}</p>
-                )}
-              </div>
-            ))}
+            ].map(field => {
+              const fieldError = passwordForm.formState.errors[field.name];
+              return (
+                <div key={field.name}>
+                  <label className="block font-sans text-label-caps uppercase tracking-wider text-on-surface-variant mb-2">{field.label}</label>
+                  <input {...passwordForm.register(field.name)} type="password" className="w-full px-4 py-3 border border-outline-variant/40 rounded-lg bg-transparent font-sans text-sm outline-none focus:border-outline" />
+                  {fieldError?.message && (
+                    <p className="font-sans text-xs text-secondary mt-1">{fieldError.message}</p>
+                  )}
+                </div>
+              );
+            })}
             <button type="submit" className="btn-primary">Update Password</button>
           </form>
         </div>

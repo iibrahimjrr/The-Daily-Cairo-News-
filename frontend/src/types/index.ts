@@ -8,6 +8,7 @@ export interface User {
   roles: string[];
   is_admin: boolean;
   is_editor: boolean;
+  is_banned?: boolean;
   created_at: string;
 }
 
@@ -46,6 +47,8 @@ export interface Article {
   status?: string;
   published_at?: string;
   created_at?: string;
+  meta_title?: string;
+  meta_description?: string;
   comments?: Comment[];
 }
 

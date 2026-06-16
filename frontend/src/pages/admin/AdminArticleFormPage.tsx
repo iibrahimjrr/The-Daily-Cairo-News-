@@ -71,7 +71,7 @@ export default function AdminArticleFormPage() {
       Placeholder.configure({ placeholder: 'Start writing your article...' }),
       Link.configure({ openOnClick: false }),
       Underline,
-      Image.configure({ resizable: true }),
+      Image,
     ],
     content: '',
   });
@@ -95,7 +95,7 @@ export default function AdminArticleFormPage() {
         setImagePreview(articleData.featured_image);
       }
     }
-  }, [articleData, editor]);
+  }, [articleData, editor, setValue]);
 
   const handleImageUpload = useCallback(async (file: File) => {
     setUploading(true);
