@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-outline-variant/30;
+  }
+
+  body {
+    @apply bg-surface text-on-surface font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+
+  /* Dark mode */
+  .dark body {
+    @apply bg-[#0f0f0f] text-[#e5e5e5];
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-outline-variant rounded-full;
+  }
+
+  /* Selection */
+  ::selection {
+    @apply bg-secondary/20;
+  }
+}
+
+@layer components {
+  .island-card {
+    @apply bg-surface-container-lowest border border-outline-variant/30 rounded-lg transition-all duration-200;
+  }
+
+  .island-card:hover {
+    @apply shadow-sm -translate-y-0.5;
+  }
+
+  .btn-primary {
+    @apply px-6 py-2.5 bg-primary text-on-primary font-sans text-sm font-semibold rounded-full transition-all duration-200 hover:opacity-90 active:scale-95;
+  }
+
+  .btn-ghost {
+    @apply px-6 py-2.5 border border-primary text-primary font-sans text-sm font-semibold rounded-full transition-all duration-200 hover:bg-primary hover:text-on-primary active:scale-95;
+  }
+
+  .btn-danger {
+    @apply px-6 py-2.5 bg-secondary text-on-secondary font-sans text-sm font-semibold rounded-full transition-all duration-200 hover:opacity-90 active:scale-95;
+  }
+
+  .category-badge {
+    @apply inline-block font-sans text-label-caps uppercase tracking-wider px-2.5 py-1 rounded-full text-xs font-semibold;
+  }
+
+  .breaking-badge {
+    @apply inline-block bg-secondary text-on-secondary font-sans text-label-caps uppercase tracking-wider px-2.5 py-1 rounded text-xs font-bold;
+  }
+
+  .skeleton {
+    @apply animate-pulse bg-surface-container rounded;
+  }
+
+  /* Article content styles */
+  .article-content h2 {
+    @apply font-serif text-headline-md mt-8 mb-4;
+  }
+
+  .article-content h3 {
+    @apply font-serif text-xl mt-6 mb-3;
+  }
+
+  .article-content p {
+    @apply font-sans text-body-lg text-on-surface mb-6 leading-relaxed;
+  }
+
+  .article-content ul, .article-content ol {
+    @apply pl-6 mb-6 space-y-2;
+  }
+
+  .article-content li {
+    @apply font-sans text-body-md;
+  }
+
+  .article-content blockquote {
+    @apply border-l-4 border-secondary pl-6 italic text-on-surface-variant my-8;
+  }
+
+  .article-content a {
+    @apply text-secondary underline;
+  }
+
+  /* Sticky nav */
+  .sticky-nav {
+    @apply sticky top-0 z-50 backdrop-blur-md bg-surface/90 border-b border-outline-variant/30;
+  }
+
+  /* Tiptap editor */
+  .ProseMirror {
+    @apply outline-none min-h-[400px] p-4 font-sans text-body-md;
+  }
+
+  .ProseMirror p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    @apply text-on-surface-variant float-left h-0 pointer-events-none;
+  }
+
+  .ProseMirror h2 {
+    @apply font-serif text-headline-md mt-8 mb-4;
+  }
+
+  .ProseMirror p {
+    @apply mb-4;
+  }
+
+  .ProseMirror ul, .ProseMirror ol {
+    @apply pl-6 mb-4;
+  }
+
+  .ProseMirror blockquote {
+    @apply border-l-4 border-secondary pl-6 italic text-on-surface-variant my-6;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}

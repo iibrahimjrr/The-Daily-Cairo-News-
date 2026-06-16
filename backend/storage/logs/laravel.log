@@ -1,0 +1,298 @@
+[2026-06-16 01:25:33] local.ERROR: Class "App\Http\Controllers\Controller" not found {"exception":"[object] (Error(code: 0): Class \"App\\Http\\Controllers\\Controller\" not found at D:/My Projects/daily cairo platform/backend/app/Http/Controllers/Auth/AuthController.php:16)
+[stacktrace]
+#0 D:/My Projects/daily cairo platform/backend/vendor/composer/ClassLoader.php(576): include()
+#1 D:/My Projects/daily cairo platform/backend/vendor/composer/ClassLoader.php(427): Composer/Autoload/{closure}('D://My Projects//...')
+#2 [internal function]: Composer/Autoload/ClassLoader->loadClass('App//Http//Contro...')
+#3 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1125): is_a('App//Http//Contro...', 'Illuminate//Rout...', true)
+#4 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1062): Illuminate/Routing/Route->controllerMiddleware()
+#5 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Routing/Router.php(834): Illuminate/Routing/Route->gatherMiddleware()
+#6 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Routing/Router.php(816): Illuminate/Routing/Router->gatherRouteMiddleware(Object(Illuminate/Routing/Route))
+#7 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Routing/Router.php(800): Illuminate/Routing/Router->runRouteWithinStack(Object(Illuminate/Routing/Route), Object(Illuminate/Http/Request))
+#8 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Routing/Router.php(764): Illuminate/Routing/Router->runRoute(Object(Illuminate/Http/Request), Object(Illuminate/Routing/Route))
+#9 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Routing/Router.php(753): Illuminate/Routing/Router->dispatchToRoute(Object(Illuminate/Http/Request))
+#10 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate/Routing/Router->dispatch(Object(Illuminate/Http/Request))
+#11 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate/Foundation/Http/Kernel->Illuminate/Foundation/Http/{closure}(Object(Illuminate/Http/Request))
+#12 D:/My Projects/daily cairo platform/backend/app/Http/Middleware/HandleCors.php(35): Illuminate/Pipeline/Pipeline->Illuminate/Pipeline/{closure}(Object(Illuminate/Http/Request))
+#13 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): App/Http/Middleware/HandleCors->handle(Object(Illuminate/Http/Request), Object(Closure))
+#14 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate/Pipeline/Pipeline->Illuminate/Pipeline/{closure}(Object(Illuminate/Http/Request))
+#15 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate/Foundation/Http/Middleware/TransformsRequest->handle(Object(Illuminate/Http/Request), Object(Closure))
+#16 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull->handle(Object(Illuminate/Http/Request), Object(Closure))
+#17 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate/Pipeline/Pipeline->Illuminate/Pipeline/{closure}(Object(Illuminate/Http/Request))
+#18 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate/Foundation/Http/Middleware/TransformsRequest->handle(Object(Illuminate/Http/Request), Object(Closure))
+#19 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Foundation/Http/Middleware/TrimStrings->handle(Object(Illuminate/Http/Request), Object(Closure))
+#20 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate/Pipeline/Pipeline->Illuminate/Pipeline/{closure}(Object(Illuminate/Http/Request))
+#21 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Http/Middleware/ValidatePostSize->handle(Object(Illuminate/Http/Request), Object(Closure))
+#22 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(109): Illuminate/Pipeline/Pipeline->Illuminate/Pipeline/{closure}(Object(Illuminate/Http/Request))
+#23 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance->handle(Object(Illuminate/Http/Request), Object(Closure))
+#24 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(74): Illuminate/Pipeline/Pipeline->Illuminate/Pipeline/{closure}(Object(Illuminate/Http/Request))
+#25 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Http/Middleware/HandleCors->handle(Object(Illuminate/Http/Request), Object(Closure))
+#26 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate/Pipeline/Pipeline->Illuminate/Pipeline/{closure}(Object(Illuminate/Http/Request))
+#27 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Http/Middleware/TrustProxies->handle(Object(Illuminate/Http/Request), Object(Closure))
+#28 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate/Pipeline/Pipeline->Illuminate/Pipeline/{closure}(Object(Illuminate/Http/Request))
+#29 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks->handle(Object(Illuminate/Http/Request), Object(Closure))
+#30 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePathEncoding.php(26): Illuminate/Pipeline/Pipeline->Illuminate/Pipeline/{closure}(Object(Illuminate/Http/Request))
+#31 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Http/Middleware/ValidatePathEncoding->handle(Object(Illuminate/Http/Request), Object(Closure))
+#32 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate/Pipeline/Pipeline->Illuminate/Pipeline/{closure}(Object(Illuminate/Http/Request))
+#33 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate/Pipeline/Pipeline->then(Object(Closure))
+#34 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate/Foundation/Http/Kernel->sendRequestThroughRouter(Object(Illuminate/Http/Request))
+#35 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1220): Illuminate/Foundation/Http/Kernel->handle(Object(Illuminate/Http/Request))
+#36 D:/My Projects/daily cairo platform/backend/public/index.php(17): Illuminate/Foundation/Application->handleRequest(Object(Illuminate/Http/Request))
+#37 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(23): require_once('D://My Projects//...')
+#38 {main}
+"} 
+[2026-06-16 01:26:20] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in D:\My Projects\daily cairo platform\backend\vendor\laravel\framework\src\Illuminate\View\Compilers\Compiler.php:75
+Stack trace:
+#0 D:\My Projects\daily cairo platform\backend\vendor\laravel\framework\src\Illuminate\View\ViewServiceProvider.php(97): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php', true)
+#1 D:\My Projects\daily cairo platform\backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(1115): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 D:\My Projects\daily cairo platform\backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(933): Illuminate\Container\Container->build(Object(Closure))
+#3 D:\My Projects\daily cairo platform\backend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1078): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 D:\My Projects\daily cairo platform\backend\vendor\laravel\framework\src\Illuminate\Container\Container.php(864): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 D:\My Projects\daily cairo platform\backend\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1058): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 D:\My Projects\daily cairo platform\backend\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(138): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in D:\\My Projects\\daily cairo platform\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Compilers\\Compiler.php:75
+Stack trace:
+#0 D:\\My Projects\\daily cairo platform\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\View\\ViewServiceProvider.php(97): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php', true)
+#1 D:\\My Projects\\daily cairo platform\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1115): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 D:\\My Projects\\daily cairo platform\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(933): Illuminate\\Container\\Container->build(Object(Closure))
+#3 D:\\My Projects\\daily cairo platform\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1078): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 D:\\My Projects\\daily cairo platform\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(864): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 D:\\My Projects\\daily cairo platform\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1058): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 D:\\My Projects\\daily cairo platform\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(138): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:75)
+[stacktrace]
+#0 {main}
+"} 
+[2026-06-16 01:29:30] local.ERROR: View path not found. {"exception":"[object] (RuntimeException(code: 0): View path not found. at D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/ViewClearCommand.php:58)
+[stacktrace]
+#0 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Console/ViewClearCommand->handle()
+#1 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#2 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#3 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#4 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#5 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#6 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArrayInput), Object(Illuminate/Console/OutputStyle))
+#7 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArrayInput), Object(Illuminate/Console/OutputStyle))
+#8 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(68): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArrayInput), Object(Symfony/Component/Console/Output/NullOutput))
+#9 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(41): Illuminate/Console/Command->runCommand('view:clear', Array, Object(Symfony/Component/Console/Output/NullOutput))
+#10 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(53): Illuminate/Console/Command->callSilent('view:clear', Array)
+#11 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/OptimizeClearCommand.php(48): Illuminate/Console/Command->callSilently('view:clear')
+#12 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php(41): Illuminate/Foundation/Console/OptimizeClearCommand->Illuminate/Foundation/Console/{closure}()
+#13 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php(59): Illuminate/Console/View/Components/Task->render('views', Object(Closure))
+#14 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/OptimizeClearCommand.php(48): Illuminate/Console/View/Components/Factory->__call('task', Array)
+#15 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Console/OptimizeClearCommand->handle()
+#16 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#17 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#18 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#19 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#20 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#21 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#22 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#23 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(Illuminate/Foundation/Console/OptimizeClearCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#25 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#26 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#27 D:/My Projects/daily cairo platform/backend/artisan(24): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#28 {main}
+"} 
+[2026-06-16 01:30:00] local.ERROR: Command "view:table" is not defined.
+
+Did you mean one of these?
+    cache:table
+    db:table
+    make:cache-table
+    make:notifications-table
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:session-table
+    notifications:table
+    queue:batches-table
+    queue:failed-table
+    queue:table
+    session:table
+    view:cache
+    view:clear {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"view:table\" is not defined.
+
+Did you mean one of these?
+    cache:table
+    db:table
+    make:cache-table
+    make:notifications-table
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:session-table
+    notifications:table
+    queue:batches-table
+    queue:failed-table
+    queue:table
+    session:table
+    view:cache
+    view:clear at D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Application.php:759)
+[stacktrace]
+#0 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Application.php(298): Symfony/Component/Console/Application->find('view:table')
+#1 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#2 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 D:/My Projects/daily cairo platform/backend/artisan(24): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 {main}
+"} 
+[2026-06-16 01:30:26] local.ERROR: View path not found. {"exception":"[object] (RuntimeException(code: 0): View path not found. at D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/ViewClearCommand.php:58)
+[stacktrace]
+#0 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Console/ViewClearCommand->handle()
+#1 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#2 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#3 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#4 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#5 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#6 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArrayInput), Object(Illuminate/Console/OutputStyle))
+#7 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArrayInput), Object(Illuminate/Console/OutputStyle))
+#8 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(68): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArrayInput), Object(Symfony/Component/Console/Output/NullOutput))
+#9 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(41): Illuminate/Console/Command->runCommand('view:clear', Array, Object(Symfony/Component/Console/Output/NullOutput))
+#10 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(53): Illuminate/Console/Command->callSilent('view:clear', Array)
+#11 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/OptimizeClearCommand.php(48): Illuminate/Console/Command->callSilently('view:clear')
+#12 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php(41): Illuminate/Foundation/Console/OptimizeClearCommand->Illuminate/Foundation/Console/{closure}()
+#13 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php(59): Illuminate/Console/View/Components/Task->render('views', Object(Closure))
+#14 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/OptimizeClearCommand.php(48): Illuminate/Console/View/Components/Factory->__call('task', Array)
+#15 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Console/OptimizeClearCommand->handle()
+#16 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#17 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#18 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#19 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#20 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#21 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#22 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#23 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(Illuminate/Foundation/Console/OptimizeClearCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#25 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#26 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#27 D:/My Projects/daily cairo platform/backend/artisan(24): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#28 {main}
+"} 
+[2026-06-16 01:30:59] local.ERROR: View path not found. {"exception":"[object] (RuntimeException(code: 0): View path not found. at D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/ViewClearCommand.php:58)
+[stacktrace]
+#0 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Console/ViewClearCommand->handle()
+#1 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#2 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#3 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#4 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#5 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#6 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArrayInput), Object(Illuminate/Console/OutputStyle))
+#7 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArrayInput), Object(Illuminate/Console/OutputStyle))
+#8 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(68): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArrayInput), Object(Symfony/Component/Console/Output/NullOutput))
+#9 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(41): Illuminate/Console/Command->runCommand('view:clear', Array, Object(Symfony/Component/Console/Output/NullOutput))
+#10 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(53): Illuminate/Console/Command->callSilent('view:clear', Array)
+#11 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/OptimizeClearCommand.php(48): Illuminate/Console/Command->callSilently('view:clear')
+#12 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php(41): Illuminate/Foundation/Console/OptimizeClearCommand->Illuminate/Foundation/Console/{closure}()
+#13 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php(59): Illuminate/Console/View/Components/Task->render('views', Object(Closure))
+#14 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/OptimizeClearCommand.php(48): Illuminate/Console/View/Components/Factory->__call('task', Array)
+#15 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Console/OptimizeClearCommand->handle()
+#16 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#17 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#18 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#19 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#20 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#21 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#22 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#23 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(Illuminate/Foundation/Console/OptimizeClearCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#25 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#26 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#27 D:/My Projects/daily cairo platform/backend/artisan(24): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#28 {main}
+"} 
+[2026-06-16 01:57:48] local.ERROR: There is no role named `admin` for guard `web`. {"exception":"[object] (Spatie\\Permission\\Exceptions\\RoleDoesNotExist(code: 0): There is no role named `admin` for guard `web`. at D:/My Projects/daily cairo platform/backend/vendor/spatie/laravel-permission/src/Exceptions/RoleDoesNotExist.php:11)
+[stacktrace]
+#0 D:/My Projects/daily cairo platform/backend/vendor/spatie/laravel-permission/src/Models/Role.php(113): Spatie/Permission/Exceptions/RoleDoesNotExist::named('admin', 'web')
+#1 D:/My Projects/daily cairo platform/backend/vendor/spatie/laravel-permission/src/Traits/HasRoles.php(419): Spatie/Permission/Models/Role::findByName('admin', 'web')
+#2 D:/My Projects/daily cairo platform/backend/vendor/spatie/laravel-permission/src/Traits/HasRoles.php(131): App/Models/User->getStoredRole('admin')
+#3 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php(850): App/Models/User->Spatie/Permission/Traits/{closure}(Array, 'admin', 0)
+#4 D:/My Projects/daily cairo platform/backend/vendor/spatie/laravel-permission/src/Traits/HasRoles.php(126): Illuminate/Support/Collection->reduce(Object(Closure), Array)
+#5 D:/My Projects/daily cairo platform/backend/vendor/spatie/laravel-permission/src/Traits/HasRoles.php(227): App/Models/User->collectRoles(Array)
+#6 D:/My Projects/daily cairo platform/backend/database/seeders/DatabaseSeeder.php(31): App/Models/User->syncRoles(Array)
+#7 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Database/Seeders/DatabaseSeeder->run()
+#8 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#9 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#10 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#11 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#12 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(184): Illuminate/Container/Container->call(Array, Array)
+#13 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(193): Illuminate/Database/Seeder->Illuminate/Database/{closure}()
+#14 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(71): Illuminate/Database/Seeder->__invoke()
+#15 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/GuardsAttributes.php(157): Illuminate/Database/Console/Seeds/SeedCommand->Illuminate/Database/Console/Seeds/{closure}()
+#16 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(70): Illuminate/Database/Eloquent/Model::unguarded(Object(Closure))
+#17 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Database/Console/Seeds/SeedCommand->handle()
+#18 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#19 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#20 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#21 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#22 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#23 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArrayInput), Object(Illuminate/Console/OutputStyle))
+#24 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArrayInput), Object(Illuminate/Console/OutputStyle))
+#25 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(68): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArrayInput), Object(Illuminate/Console/OutputStyle))
+#26 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(29): Illuminate/Console/Command->runCommand('db:seed', Array, Object(Illuminate/Console/OutputStyle))
+#27 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php(128): Illuminate/Console/Command->call('db:seed', Array)
+#28 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php(104): Illuminate/Database/Console/Migrations/FreshCommand->runSeeder(NULL)
+#29 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Database/Console/Migrations/FreshCommand->handle()
+#30 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#31 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#32 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#33 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#34 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#35 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#36 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#37 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#38 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(Illuminate/Database/Console/Migrations/FreshCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#39 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#40 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#41 D:/My Projects/daily cairo platform/backend/artisan(24): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#42 {main}
+"} 
+[2026-06-16 02:03:28] local.ERROR: There is no role named `admin` for guard `web`. {"exception":"[object] (Spatie\\Permission\\Exceptions\\RoleDoesNotExist(code: 0): There is no role named `admin` for guard `web`. at D:/My Projects/daily cairo platform/backend/vendor/spatie/laravel-permission/src/Exceptions/RoleDoesNotExist.php:11)
+[stacktrace]
+#0 D:/My Projects/daily cairo platform/backend/vendor/spatie/laravel-permission/src/Models/Role.php(113): Spatie/Permission/Exceptions/RoleDoesNotExist::named('admin', 'web')
+#1 D:/My Projects/daily cairo platform/backend/vendor/spatie/laravel-permission/src/Traits/HasRoles.php(419): Spatie/Permission/Models/Role::findByName('admin', 'web')
+#2 D:/My Projects/daily cairo platform/backend/vendor/spatie/laravel-permission/src/Traits/HasRoles.php(131): App/Models/User->getStoredRole('admin')
+#3 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php(850): App/Models/User->Spatie/Permission/Traits/{closure}(Array, 'admin', 0)
+#4 D:/My Projects/daily cairo platform/backend/vendor/spatie/laravel-permission/src/Traits/HasRoles.php(126): Illuminate/Support/Collection->reduce(Object(Closure), Array)
+#5 D:/My Projects/daily cairo platform/backend/vendor/spatie/laravel-permission/src/Traits/HasRoles.php(227): App/Models/User->collectRoles(Array)
+#6 D:/My Projects/daily cairo platform/backend/database/seeders/DatabaseSeeder.php(31): App/Models/User->syncRoles(Array)
+#7 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Database/Seeders/DatabaseSeeder->run()
+#8 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#9 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#10 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#11 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#12 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(184): Illuminate/Container/Container->call(Array, Array)
+#13 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(193): Illuminate/Database/Seeder->Illuminate/Database/{closure}()
+#14 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(71): Illuminate/Database/Seeder->__invoke()
+#15 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/GuardsAttributes.php(157): Illuminate/Database/Console/Seeds/SeedCommand->Illuminate/Database/Console/Seeds/{closure}()
+#16 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(70): Illuminate/Database/Eloquent/Model::unguarded(Object(Closure))
+#17 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Database/Console/Seeds/SeedCommand->handle()
+#18 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#19 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#20 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#21 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#22 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#23 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArrayInput), Object(Illuminate/Console/OutputStyle))
+#24 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArrayInput), Object(Illuminate/Console/OutputStyle))
+#25 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(68): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArrayInput), Object(Illuminate/Console/OutputStyle))
+#26 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(29): Illuminate/Console/Command->runCommand('db:seed', Array, Object(Illuminate/Console/OutputStyle))
+#27 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php(128): Illuminate/Console/Command->call('db:seed', Array)
+#28 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/FreshCommand.php(104): Illuminate/Database/Console/Migrations/FreshCommand->runSeeder(NULL)
+#29 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Database/Console/Migrations/FreshCommand->handle()
+#30 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#31 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#32 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#33 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#34 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#35 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#36 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#37 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#38 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(Illuminate/Database/Console/Migrations/FreshCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#39 D:/My Projects/daily cairo platform/backend/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#40 D:/My Projects/daily cairo platform/backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#41 D:/My Projects/daily cairo platform/backend/artisan(24): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#42 {main}
+"} 

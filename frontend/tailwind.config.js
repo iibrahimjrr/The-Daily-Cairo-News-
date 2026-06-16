@@ -1,0 +1,121 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: 'class',
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        // Island Design System
+        primary: '#000000',
+        'on-primary': '#ffffff',
+        'primary-container': '#1c1b1b',
+        'on-primary-container': '#858383',
+        'primary-fixed': '#e5e2e1',
+        'primary-fixed-dim': '#c8c6c5',
+        'on-primary-fixed': '#1c1b1b',
+        'on-primary-fixed-variant': '#474646',
+        'inverse-primary': '#c8c6c5',
+
+        secondary: '#bb0011',
+        'on-secondary': '#ffffff',
+        'secondary-container': '#e22525',
+        'on-secondary-container': '#fffbff',
+        'secondary-fixed': '#ffdad6',
+        'secondary-fixed-dim': '#ffb4ab',
+        'on-secondary-fixed': '#410002',
+        'on-secondary-fixed-variant': '#93000a',
+
+        tertiary: '#000000',
+        'on-tertiary': '#ffffff',
+        'tertiary-container': '#1b1c1a',
+        'on-tertiary-container': '#848481',
+        'tertiary-fixed': '#e4e2de',
+        'tertiary-fixed-dim': '#c8c6c3',
+        'on-tertiary-fixed': '#1b1c1a',
+        'on-tertiary-fixed-variant': '#474744',
+
+        error: '#ba1a1a',
+        'on-error': '#ffffff',
+        'error-container': '#ffdad6',
+        'on-error-container': '#93000a',
+
+        background: '#f9f9ff',
+        'on-background': '#151c27',
+        surface: '#f9f9ff',
+        'on-surface': '#151c27',
+        'surface-variant': '#dce2f3',
+        'on-surface-variant': '#444748',
+        'surface-bright': '#f9f9ff',
+        'surface-dim': '#d3daea',
+        'surface-container-lowest': '#ffffff',
+        'surface-container-low': '#f0f3ff',
+        'surface-container': '#e7eefe',
+        'surface-container-high': '#e2e8f8',
+        'surface-container-highest': '#dce2f3',
+
+        'inverse-surface': '#2a313d',
+        'inverse-on-surface': '#ebf1ff',
+        outline: '#747878',
+        'outline-variant': '#c4c7c7',
+        'surface-tint': '#5f5e5e',
+
+        // Dark mode overrides
+        'dark-surface': '#0f0f0f',
+        'dark-on-surface': '#e5e5e5',
+        'dark-surface-container': '#1a1a2e',
+      },
+      fontFamily: {
+        serif: ['"Libre Caslon Text"', 'Georgia', 'serif'],
+        sans: ['"Work Sans"', 'system-ui', 'sans-serif'],
+        display: ['"Libre Caslon Text"', 'Georgia', 'serif'],
+      },
+      fontSize: {
+        'display-lg': ['64px', { lineHeight: '1.1', letterSpacing: '-0.02em', fontWeight: '400' }],
+        'display-lg-mobile': ['40px', { lineHeight: '1.15', fontWeight: '400' }],
+        'headline-lg': ['32px', { lineHeight: '1.2', fontWeight: '400' }],
+        'headline-md': ['24px', { lineHeight: '1.3', fontWeight: '400' }],
+        'body-lg': ['18px', { lineHeight: '1.6', fontWeight: '400' }],
+        'body-md': ['16px', { lineHeight: '1.5', fontWeight: '400' }],
+        'label-caps': ['12px', { lineHeight: '1.2', letterSpacing: '0.05em', fontWeight: '600' }],
+        metadata: ['14px', { lineHeight: '1.4', fontWeight: '400' }],
+      },
+      spacing: {
+        'container-max': '1440px',
+        gutter: '24px',
+        'margin-desktop': '48px',
+        'margin-mobile': '20px',
+        'stack-sm': '8px',
+        'stack-md': '16px',
+        'stack-lg': '32px',
+      },
+      borderRadius: {
+        DEFAULT: '0.5rem',
+        sm: '0.25rem',
+        md: '0.75rem',
+        lg: '1rem',
+        xl: '1.5rem',
+        full: '9999px',
+      },
+      animation: {
+        'ticker': 'ticker 30s linear infinite',
+        'fade-in': 'fadeIn 0.3s ease-in-out',
+        'slide-up': 'slideUp 0.4s ease-out',
+      },
+      keyframes: {
+        ticker: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
+    },
+  },
+  plugins: [],
+}
